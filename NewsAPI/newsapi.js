@@ -1,7 +1,7 @@
 function callNewsAPI(){
     document.getElementById("news-articles").innerHTML = "";
     let searchTerm = document.getElementById("search-term");
-    let searchString = `https://newsapi.org/v2/everything?q="${searchTerm.value}"&from=2024-12-25&sortBy=popularity&apiKey=f80b642e2c794a62990e16540c383e30`;
+    let searchString = `https://newsapi.org/v2/everything?q="${searchTerm.value}"&from=2024-12-25&sortBy=popularity&apiKey=`;
     searchTerm.value !== "" ? 
         fetch(searchString)
         .then(res => res.json())
