@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newsapi.css">
+    <script src="fallback.js"></script>
+    <title>NewsAPI demo</title>
+</head>
+<body>
+    <div id="site-container">
+        <div id="navigation">
+            <h1>Demo</h1>
+            <p>NewsAPI</p>
+            
+                <label for="search-term">Topic to search:</label>
+                <input type="text" name="search-term" id="search-term">
+                <input type="submit" value="Search" onclick="callNewsAPI()">
+            
+        </div>
+        <div id="news-articles"></div>
+    </div>
+    <script src="newsapi.js"></script>
+</body>
+</html>
